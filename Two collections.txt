@@ -1,0 +1,4 @@
+Two collections:
+
+1. Accordion
+2. Swipper
