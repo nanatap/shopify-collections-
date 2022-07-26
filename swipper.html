@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<style>
+    .swiper {
+        width: 1000px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    /* img {vertical-align: middle;}
+  
+  /* Slideshow container */
+    .swiper-wrapper {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .swiper-button-prev,
+    .swiper-button-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    */
+</style>
+
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+<img src="https://i.picsum.photos/id/1004/5616/3744.jpg?hmac=Or7EJnz-ky5bsKa9_frdDcDCR9VhCP8kMnbZV6-WOrY">
+        </div>
+        <div class="swiper-slide">
+<img src="https://i.picsum.photos/id/1001/5616/3744.jpg?hmac=38lkvX7tHXmlNbI0HzZbtkJ6_wpWyqvkX4Ty6vYElZE">
+        </div>
+        <div class="swiper-slide">
+<img src="https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo">
+        </div>
+        ...
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-scrollbar"></div>
+</div>
+
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper('.swiper', {
+        direction: 'vertical',
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
